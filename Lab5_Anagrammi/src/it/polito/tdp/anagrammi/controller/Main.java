@@ -13,7 +13,7 @@ public class Main extends Application {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("Anagrammi.fxml")) ;
 			BorderPane root = (BorderPane)loader.load();
-			
+			 
 			AnagrammiController controller = loader.getController();
 			
 			Model model = new Model();

@@ -27,7 +27,7 @@ public class paroleDAO {
 			ResultSet rs = st.executeQuery();
 			
 			while (rs.next()) {
-
+ 
 				parola=rs.getString("nome");
 				if(parola.compareTo(s)==0)
 					trovata=true;

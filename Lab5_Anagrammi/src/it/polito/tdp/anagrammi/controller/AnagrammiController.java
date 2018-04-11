@@ -43,10 +43,10 @@ public class AnagrammiController {
     @FXML
     private Button reset;
 
-    @FXML
+    @FXML 
     void doReset(ActionEvent event) {
-
-    	textArea1.setText("");
+  
+    	textArea1.setText(""); 
     	textArea2.setText("");
     	parola.setText("");
     	

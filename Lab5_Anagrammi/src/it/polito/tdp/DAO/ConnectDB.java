@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectDB {
-
+ 
 	private static final String jdbcURL = "jdbc:mysql://localhost/dizionario?user=root&password=root";
 	private static Connection conn = null;
 	

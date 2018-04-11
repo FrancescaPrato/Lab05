@@ -30,7 +30,7 @@ public class Model {
 		
 		
 		
-		if (level == parola.length()) {
+		if (level == parola.length()) { 
 					this.aggiungiAnagramma(anagramma);
 					return ;
 		}

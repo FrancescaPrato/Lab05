@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.anagrammi.controller.AnagrammiController"/>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.anagrammi.controller.AnagrammiController">
+   <top>
+      <Label text="Lab5_Anagrammi" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <VBox prefHeight="396.0" prefWidth="467.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="23.0" prefWidth="600.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="parola" prefHeight="25.0" prefWidth="175.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="calcolaAnagrammi" mnemonicParsing="false" onAction="#doCalcolaAnagrammi" prefHeight="25.0" prefWidth="134.0" text="Calcolo Anagrammi">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anagrammi Corretti" wrappingWidth="104.96484375">
+               <VBox.margin>
+                  <Insets left="30.0" top="15.0" />
+               </VBox.margin>
+            </Text>
+            <TextArea fx:id="textArea1" prefHeight="151.0" prefWidth="467.0">
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextArea>
+            <HBox prefHeight="33.0" prefWidth="467.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anagrammi Errati">
+                     <HBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <TextArea fx:id="textArea2" prefHeight="111.0" prefWidth="417.0">
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextArea>
+            <Button fx:id="reset" mnemonicParsing="false" onAction="#doReset" prefHeight="25.0" prefWidth="102.0" text="Reset">
+               <VBox.margin>
+                  <Insets left="25.0" top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

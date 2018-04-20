@@ -19,7 +19,7 @@ public class paroleDAO {
 		String parola="";
 		final String sql = "SELECT * FROM parola WHERE nome=? ";
 		
-		try {
+		try { 
 
 			Connection conn = ConnectDB.getConnection();
 			PreparedStatement st = conn.prepareStatement(sql);

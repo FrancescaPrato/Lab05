@@ -15,7 +15,7 @@ public class Main extends Application {
 			BorderPane root = (BorderPane)loader.load();
 			 
 			AnagrammiController controller = loader.getController();
-			
+			   
 			Model model = new Model();
 			controller.setModel(model);
 		

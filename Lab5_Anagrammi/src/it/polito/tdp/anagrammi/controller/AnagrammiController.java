@@ -16,7 +16,7 @@ public class AnagrammiController {
 
 	public void setModel(Model model) {
 		// TODO Auto-generated method stub
-		this.model =model;
+		this.model =model; 
 	}	
 	
 

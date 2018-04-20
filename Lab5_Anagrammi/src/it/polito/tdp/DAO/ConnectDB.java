@@ -16,7 +16,7 @@ public class ConnectDB {
 			}
 		} catch (SQLException e) {
 			System.out.println("Non e' possible aprire la connessione con il DB");
-		}
+		} 
 		return conn;
 	}
 

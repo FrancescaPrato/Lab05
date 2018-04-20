@@ -12,7 +12,7 @@ public class Model {
 	
 	private paroleDAO paroledao =new paroleDAO();
 	
-
+ 
 	
 	public Model() {
 		// TODO Auto-generated constructor stub

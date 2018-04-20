@@ -14,7 +14,7 @@
    <top>
       <Label text="Lab5_Anagrammi" BorderPane.alignment="CENTER">
          <BorderPane.margin>
-            <Insets top="10.0" />
+            <Insets top="10.0" /> 
          </BorderPane.margin>
       </Label>
    </top>
